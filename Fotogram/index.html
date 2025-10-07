@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="./img/favicon/favicon.png" />
+        <title>Fotogram - My Impressions</title>
+    </head>
+    <body>
+        <header>
+            <div class="head_container">
+                <div>
+                    <img src="./img/Fotogram_Logo.svg" alt="Fotogram" />
+                </div>
+            </div>
+        </header>
+
+        <h1 class="headlineBig">My Greece Collection</h1>
+
+        <main class="main_container">
+            <section>
+                <div class="rowImages" id="rowImages"></div>
+            </section>
+        </main>
+
+        <dialog id="picturesDialog" class="picturesDialog">
+            <header>
+                <div class="headerDialog">
+                    <div class="imageName" id="imageName"></div>
+                    <button onclick="closeDialog()">
+                        <img src="img/xmark-solid-full.svg" alt="" />
+                    </button>
+                </div>
+            </header>
+
+            <section>
+                <div class="centerImage">
+                    <img id="dialogImage" />
+                </div>
+            </section>
+
+            <nav>
+                <div class="footerCounterNav">
+                    <button onclick="prevImage()">
+                        <img src="./img/arrow-left-solid-full.svg" alt="" />
+                    </button>
+                    <p id="counter"></p>
+                    <button onclick="nextImage()">
+                        <img src="./img/arrow-right-solid-full.svg" alt="" />
+                    </button>
+                </div>
+            </nav>
+        </dialog>
+
+        <footer>
+            <div class="footer_container">Copyright Dennis</div>
+        </footer>
+
+        <script src="./dialog.js"></script>
+    </body>
+</html>
